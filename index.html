@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emon — আপনার ওয়েবসাইট</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0b74de;
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f1724;line-height:1.5}
+    header{background:linear-gradient(90deg,var(--accent),#0366a6);color:white;padding:36px 20px}
+    .wrap{max-width:1100px;margin:0 auto}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;background:white;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    nav{margin-top:12px}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-right:16px;font-weight:600}
+
+    .hero{display:flex;gap:30px;align-items:center;padding:40px 0}
+    .hero-left{flex:1}
+    .hero h1{margin:0;font-size:34px}
+    .hero p{color:rgba(255,255,255,0.92);margin-top:10px}
+    .btn{display:inline-block;padding:10px 18px;background:white;color:var(--accent);border-radius:10px;font-weight:600;text-decoration:none}
+
+    main{padding:36px 20px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(8,15,30,0.06)}
+    h2{margin-top:6px}
+    .muted{color:var(--muted)}
+
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:8px}
+    footer{padding:30px 20px;margin-top:20px}
+    .footer-inner{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8;margin-top:8px}
+    form button{margin-top:10px;padding:10px 16px;border-radius:8px;border:none;background:var(--accent);color:white;font-weight:700}
+
+    @media(max-width:720px){
+      .hero{flex-direction:column;align-items:flex-start}
+      nav{display:none}
+      header{padding:24px 14px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">E</div>
+        <div>
+          <div style="font-weight:700">Emon</div>
+          <div style="font-size:13px;opacity:0.9">Graphic &amp; Video · Chittagong</div>
+        </div>
+      </div>
+      <nav aria-label="Primary navigation">
+        <a href="#about">সম্পর্কে</a>
+        <a href="#services">সেবা</a>
+        <a href="#portfolio">পোর্টফোলিও</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+
+      <div class="hero">
+        <div class="hero-left">
+          <h1>আপনার ডিজিটাল পরিচয় — দ্রুত, পরিষ্কার, পেশাদার</h1>
+          <p>লোগো, পোস্টার, ভিডিও এডিট এবং কনটেন্ট ক্রিয়েশন — সবকিছু এক জায়গায়। আমি আপনার জন্য কাস্টম ডিজাইন করে দিতে পারি।</p>
+          <a class="btn" href="#contact">অর্ডার করুন</a>
+        </div>
+        <div class="hero-right" style="min-width:240px">
+          <div class="card">
+            <strong>সেবা</strong>
+            <div class="muted" style="font-size:13px;margin-top:6px">লোগো ডিজাইন · পোস্টার · ভিডিও এডিট · সোশ্যাল পোস্ট</div>
+            <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+              <span style="font-size:12px;padding:6px 8px;background:#eef6ff;border-radius:8px">দ্রুত ডেলিভারি</span>
+              <span style="font-size:12px;padding:6px 8px;background:#eef6ff;border-radius:8px">কাস্টম রিকুইরমেন্ট</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about" class="card" style="margin-top:-40px">
+      <h2>সম্পর্কে</h2>
+      <p class="muted">আমি আরফিন ইমন — গ্রাফিক ডিজাইনার ও ভিডিও এডিটর। ২০১৮ থেকে লোগো ও ডিজাইন কাজ করছি। আপনার ব্র্যান্ডের জন্য সাশ্রয়ী ও কার্যকরী ডিজাইন করব।</p>
+    </section>
+
+    <section id="services" style="margin-top:18px">
+      <h2>আমার সেবা</h2>
+      <div class="services">
+        <div class="card">
+          <strong>লোগো ডিজাইন</strong>
+          <div class="muted" style="margin-top:8px">ব্র্যান্ড আইডেন্টিটি, ভেক্টর ফাইল, রঙের ভ্যারিয়েশন সহ।</div>
+        </div>
+        <div class="card">
+          <strong>পোস্টার &amp; ফেসবুক গ্রাফিক</strong>
+          <div class="muted" style="margin-top:8px">প্রচার, ইভেন্ট বা প্রচারাভিযানের পোস্টার।</div>
+        </div>
+        <div class="card">
+          <strong>ভিডিও এডিটিং</strong>
+          <div class="muted" style="margin-top:8px">Raw থেকে প্রোফেশনাল কাটিং, সাবটাইটল, কালার করেকশন।</div>
+        </div>
+        <div class="card">
+          <strong>ব্র্যান্ডিং প্যাকেজ</strong>
+          <div class="muted" style="margin-top:8px">লোগো, ভিজিটিং কার্ড, সোশ্যাল কিট।</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" style="margin-top:18px">
+      <h2>পোর্টফোলিও</h2>
+      <div class="cards" style="margin-top:8px">
+        <div class="card"> <strong>প্রকল্প ১</strong>
+          <div class="muted" style="margin-top:8px">লোগো ও ব্র্যান্ড কিট</div>
+        </div>
+        <div class="card"> <strong>প্রকল্প ২</strong>
+          <div class="muted" style="margin-top:8px">ফেসবুক পোস্ট সিরিজ</div>
+        </div>
+        <div class="card"> <strong>প্রকল্প ৩</strong>
+          <div class="muted" style="margin-top:8px">ভিডিও প্রোডাকশন নমুনা</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px" class="card">
+      <h2>যোগাযোগ</h2>
+      <p class="muted">অর্ডার বা কাস্টম কাজের জন্য নিচের ফর্মটি পূরণ করুন — আপনি চাইলে সরাসরি ইমেইল করতেও পারেন: <strong>arfinemn@gmail.com</strong></p>
+      <form onsubmit="handleContact(event)">
+        <label>নাম</label>
+        <input id="name" placeholder="আপনার নাম" required>
+        <label>ইমেইল / ফোন</label>
+        <input id="contactinfo" placeholder="Email or phone" required>
+        <label>বার্তা / কাজের বিবরণ</label>
+        <textarea id="message" rows="4" placeholder="কি করলে হবে, ডেডলাইন (যদি থাকে)" required></textarea>
+        <button type="submit">বার্তা পাঠান</button>
+      </form>
+      <div id="notice" style="margin-top:10px;color:green;display:none">আপনার বার্তা রেডি — কম্পোজার খুলুন।</div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Emon</strong>
+        <div class="muted">Chittagong, Bangladesh</div>
+      </div>
+      <div class="muted">ফলো করুন: <a href="#" style="text-decoration:none;color:var(--accent)">Facebook</a> · <a href="#" style="text-decoration:none;color:var(--accent)">YouTube</a></div>
+    </div>
+  </footer>
+
+  <script>
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const contact = document.getElementById('contactinfo').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const mailto = `mailto:arfinemn@gmail.com?subject=${encodeURIComponent('ওয়েবসাইট - নতুন অনুরোধ from '+name)}&body=${encodeURIComponent('Name: '+name+'\nContact: '+contact+'\n\nMessage:\n'+message)}`;
+      // Try to open email client. If popup blocked, show notice and let user copy.
+      window.location.href = mailto;
+      document.getElementById('notice').style.display='block';
+      document.getElementById('notice').textContent = 'ইমেইল ক্লায়েন্ট খোলা হয়েছে (না খুললে arfinemn@gmail.com এ মেইল করুন)।';
+    }
+  </script>
+</body>
+</html>
